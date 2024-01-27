@@ -1,0 +1,205 @@
+[ {  "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            
+            },
+      "error": "Name is required"      
+            },
+      {  "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "123456",
+            "repeatPassword": "123456"
+            },
+      "error": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "test test@gmail.com",
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "Email is incorrect"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": null,
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "Email is incorrect"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "nameLast": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "Last Name is required"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "\"name\" is not allowed to be empty"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "{{$randomPassword}}",
+            "repeatPassword": "{{$randomPassword}}"
+            },
+      "error": "Passwords do not match"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "",
+            "repeatPassword": ""
+            },
+      "error": "ok"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/users/profile",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "country": "{{$randomCountry}}",
+            "dateBirth": "{{$randomDatePast}}",
+            "photo": "test"
+            },
+      "error": "Cannot read property 'mime' of undefined"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/users/profile",       
+      "bodyTest" :  {
+
+      },
+      "error": "Empty body is not allowed"      
+            },{  
+      "domain": "https://qauto2.forstudy.space/api/users/profile",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "country": "{{$randomCountry}}",
+            "dateBirth": "{{$randomDatePast}}",
+            "photo": ""
+            },
+      "error": "ok"      
+            },{  "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            
+            },
+      "error": "Name is required"      
+            },
+      {  "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "123456",
+            "repeatPassword": "123456"
+            },
+      "error": "Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "test test@gmail.com",
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "Email is incorrect"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": null,
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "Email is incorrect"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "nameLast": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "Last Name is required"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "{{passwordTest}}",
+            "repeatPassword": "{{passwordTest}}"
+            },
+      "error": "\"name\" is not allowed to be empty"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "{{$randomPassword}}",
+            "repeatPassword": "{{$randomPassword}}"
+            },
+      "error": "Passwords do not match"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/auth/signup",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "email": "{{$randomEmail}}",
+            "password": "",
+            "repeatPassword": ""
+            },
+      "error": "ok"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/users/profile",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "country": "{{$randomCountry}}",
+            "dateBirth": "{{$randomDatePast}}",
+            "photo": "test"
+            },
+      "error": "Cannot read property 'mime' of undefined"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/users/profile",       
+      "bodyTest" :  {
+
+      },
+      "error": "Empty body is not allowed"      
+            },{  
+      "domain": "https://qauto.forstudy.space/api/users/profile",       
+      "bodyTest" :  {
+            "name": "{{$randomFirstName}}",
+            "lastName": "{{$randomLastName}}",
+            "country": "{{$randomCountry}}",
+            "dateBirth": "{{$randomDatePast}}",
+            "photo": ""
+            },
+      "error": "ok"      
+            }
+
+     ]
